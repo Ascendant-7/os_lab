@@ -1,0 +1,102 @@
+    1  echo ~
+    2  cd ..
+    3  echo ~
+    4  cd gic-ang-panha
+    5  cd ..
+    6  cd sysadmin
+    7  cd gic-ang-panha
+    8  ls
+    9  cd document
+   10  cd documents
+   11  cd ..
+   12  cd home
+   13  cd gic-ang-panha
+   14  cd ..
+   15  cd gic-cheang-hokleng
+   16  cd gic-chheang-hokleng
+   17  cd gic-ang-panha
+   18  tree
+   19  mkdir lab2
+   20  cd lab2
+   21  mkdir ex1 ex2
+   22  tree
+   23  cd ex1
+   24  mkdir etc home
+   25  tree
+   26  cd etc
+   27  mkdir network systemd udev
+   28  tree
+   29  cd system
+   30  cd systemd
+   31  mkdir system user
+   32  cd ....
+   33  cd ...
+   34  cd ..
+   35  cd home
+   36  cd ~
+   37  tree
+   38  cd lab2/ex1/home
+   39  mkdir -p lost+found user/Documents/
+   40  tree
+   41  cd lab2/ex1/etc/network
+   42  touch interfaces
+   43  tree
+   44  rm -i interfaces
+   45  tree
+   46  cd ..
+   47  cd etc
+   48  cd network
+   49  touch interfaces ../systemd/resolved.conf
+   50  cd ..
+   51  tree
+   52  touch systemd/system.conf systemd/user.conf
+   53  cd udev
+   54  touch rules.d udev.conf
+   55  cd ..
+   56  touch ex1_command_history.txt
+   57  touch result.txt
+   58  cd ~
+   59  tree
+   60  cd ex2
+   61  cd lab2/ex2
+   62  touch ex2_command_history.txt
+   63  cd ~
+   64  tree
+   65  cd lab2
+   66  tree
+   67  cd ex1/etc/udev
+   68  rm -r rules.d
+   69  mkdir rules.d
+   70  tree
+   71  cd ~/lab2
+   72  tree
+   73  ls
+   74  clear
+   75  tree
+   76  history > lab2/ex1/ex1_command_history.txt
+   77  less lab2/ex1/ex1_command_history.txt
+   78  mkdir -p Desktop/TPOS Document/TP01
+   79  tree
+   80  touch document
+   81  rm document
+   82  tree
+   83  touch document/file.txt
+   84  touch Document/file.txt
+   85  tree
+   86  cd /root/
+   87  cd /home/gic-ang-panha
+   88  cd /home/gic-ang-panha/Desktop/TPOS
+   89  cd /root/Deskop/TPOS
+   90  cd /home/Desktop
+   91  cd /home/Deskop
+   92  cd ..
+   93  cd /home
+   94  ls
+   95  cd gic-ang-panha/Desktop/TPOS
+   96  echo "I am Ang Panha" > /home/gic-ang-panha/Document/file.txt
+   97  cd ../../Document
+   98  less file.txt
+   99  cat file.txt
+  100  clear
+  101  cat file.txt
+  102  history > ~/lab2/ex2/ex2_command_history.txt

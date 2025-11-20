@@ -1,0 +1,254 @@
+    1  echo ~
+    2  cd ..
+    3  echo ~
+    4  cd gic-ang-panha
+    5  cd ..
+    6  cd sysadmin
+    7  cd gic-ang-panha
+    8  ls
+    9  cd document
+   10  cd documents
+   11  cd ..
+   12  cd home
+   13  cd gic-ang-panha
+   14  cd ..
+   15  cd gic-cheang-hokleng
+   16  cd gic-chheang-hokleng
+   17  cd gic-ang-panha
+   18  tree
+   19  mkdir lab2
+   20  cd lab2
+   21  mkdir ex1 ex2
+   22  tree
+   23  cd ex1
+   24  mkdir etc home
+   25  tree
+   26  cd etc
+   27  mkdir network systemd udev
+   28  tree
+   29  cd system
+   30  cd systemd
+   31  mkdir system user
+   32  cd ....
+   33  cd ...
+   34  cd ..
+   35  cd home
+   36  cd ~
+   37  tree
+   38  cd lab2/ex1/home
+   39  mkdir -p lost+found user/Documents/
+   40  tree
+   41  cd lab2/ex1/etc/network
+   42  touch interfaces
+   43  tree
+   44  rm -i interfaces
+   45  tree
+   46  cd ..
+   47  cd etc
+   48  cd network
+   49  touch interfaces ../systemd/resolved.conf
+   50  cd ..
+   51  tree
+   52  touch systemd/system.conf systemd/user.conf
+   53  cd udev
+   54  touch rules.d udev.conf
+   55  cd ..
+   56  touch ex1_command_history.txt
+   57  touch result.txt
+   58  cd ~
+   59  tree
+   60  cd ex2
+   61  cd lab2/ex2
+   62  touch ex2_command_history.txt
+   63  cd ~
+   64  tree
+   65  cd lab2
+   66  tree
+   67  cd ex1/etc/udev
+   68  rm -r rules.d
+   69  mkdir rules.d
+   70  tree
+   71  cd ~/lab2
+   72  tree
+   73  ls
+   74  clear
+   75  tree
+   76  history > lab2/ex1/ex1_command_history.txt
+   77  less lab2/ex1/ex1_command_history.txt
+   78  mkdir -p Desktop/TPOS Document/TP01
+   79  tree
+   80  touch document
+   81  rm document
+   82  tree
+   83  touch document/file.txt
+   84  touch Document/file.txt
+   85  tree
+   86  cd /root/
+   87  cd /home/gic-ang-panha
+   88  cd /home/gic-ang-panha/Desktop/TPOS
+   89  cd /root/Deskop/TPOS
+   90  cd /home/Desktop
+   91  cd /home/Deskop
+   92  cd ..
+   93  cd /home
+   94  ls
+   95  cd gic-ang-panha/Desktop/TPOS
+   96  echo "I am Ang Panha" > /home/gic-ang-panha/Document/file.txt
+   97  cd ../../Document
+   98  less file.txt
+   99  cat file.txt
+  100  clear
+  101  cat file.txt
+  102  history > ~/lab2/ex2/ex2_command_history.txt
+  103  less ~/lab2/ex2/ex2_command_history.txt
+  104  ls
+  105  cd ..
+  106  cd ~
+  107  tree
+  108  mkdir lab3
+  109  tree
+  110  cd lab3
+  111  ls
+  112  mkdir CopyingFolder
+  113  mkdir Desktop Documents link_lab wildcard_lab logs
+  114  ls
+  115  touch CopyingFolder/copied.txt; cp CopyingFolder/copied.txt Documents
+  116  tree
+  117  touch {one,two,three,four,five}.txt
+  118  ls
+  119  touch tree_structure_{after,before}_remove.txt wildcardex1_command_history.txt
+  120  ls
+  121  tree
+  122  mv {one,two,three,four,five}.txt Documents
+  123  tree
+  124  cp Documents/{one,two,three,four,five}.txt CopyingFolder
+  125  tree
+  126  cp -r CopyingFolder Desktop
+  127  tree
+  128  touch Documents/{one,two,three,four,five}_document.txt
+  129  tree
+  130  echo 1 > one_document.txt; echo 2 > two_document.txt; echo 3 > three_document.txt; echo 4 > four_document.txt; echo 5 > five_document.txt
+  131  cat {one,two,three,four,five}_document.txt
+  132  tree
+  133  rm {one,two,three,four,five}_document.txt
+  134  tree
+  135  cd Documents
+  136  tree
+  137  echo 1 > one_document.txt; echo 2 > two_document.txt; echo 3 > three_document.txt; echo 4 > four_document.txt; echo 5 > five_document.txt
+  138  cat {one,two,three,four,five}_document.txt
+  139  mv one_document.txt un_document.txt; mv two_document.txt deux_document.txt; mv three_document.txt trois_document.txt; mv four_document.txt quatre_documen
+  140  ls
+  141  mv un_document.txt document_un.txt; mv deux_document.txt document_deux.txt; mv trois_document.txt document_trois.txt; mv quatre_documen document_quatre.txt; mv five_document.txt document_cinque.txt
+  142  ls
+  143  cat document_{un,deux,trois,quatre,cinque}.txt
+  144  cd ..
+  145  mkdir MoveFolder
+  146  tree
+  147  mv Documents/*.txt MoveFolder
+  148  tree
+  149  mkdir Desktop/FrenchFolder
+  150  tree
+  151  mv MoveFolder/* Desktop/FrenchFolder
+  152  tree
+  153  tree > tree_structure_before_remove.txt
+  154  less tree_structure_before_remove.txt
+  155  cd ~
+  156  rm lab3/Desktop/FrenchFolder/document_deux.txt
+  157  tree
+  158  cd Documents
+  159  cd lab3/Documents
+  160  mkdir EmptyFolder
+  161  tree
+  162  touch EmptyFolder/deletefile.txt
+  163  mkdir EmptyFolder/DeleteFolder
+  164  tree
+  165  cd EmptyFolder
+  166  rm -r DeleteFolder
+  167  tree
+  168  cd Docuemnts
+  169  cd Documents
+  170  cd lab3/Documents
+  171  rm -r EmptyFolder
+  172  tree
+  173  cd ~; tree
+  174  ls
+  175  tree
+  176  ls
+  177  nano lab3/tree_structure_after_remove.txt 
+  178  nano lab3/tree_structure_before_remove.txt 
+  179  cd document
+  180  cd Document
+  181  ls
+  182  mkdir EmptyFolder
+  183  cd EmptyFolder/
+  184  touch deletefile.txt
+  185  mkdir DeleteFolder
+  186  rm DeleteFolder
+  187  rm -r DeleteFolder
+  188  cd ..
+  189  rm -r EmptyFolder/
+  190  rm ~/lab3/Desktop/FrenchFolder/*.txt
+  191  tree
+  192  cd ~/lab3
+  193  tree
+  194  history > tree_structure_after_remove.txt 
+  195  less tree_structure_after_remove.txt 
+  196  less tree_structure_before_remove.txt 
+  197  tree > tree_structure_after_remove.txt 
+  198  less tree_structure_after_remove.txt 
+  199  history > wildcardex1_command_history.txt 
+  200  less wildcardcardex1_command_history.txt
+  201  less wildcardex1_command_history.txt 
+  202  mkdir wildcard_lab
+  203  cd wildcard_lab/
+  204  touch {a,b,ab,abc,xyz}.txt
+  205  ls
+  206  touch xyz.log data.csv
+  207  ls *.txt
+  208  ls *.log
+  209  ls ?.txt
+  210  mkdir ../lab3
+  211  rm ../lab3
+  212  rm -r ../lab3
+  213  mkdir ../backup
+  214  cp *.* ../backup
+  215  tree
+  216  cd ..; tree
+  217  rm backup/*.*
+  218  tree
+  219  cp wildcard_lab/*.txt backup
+  220  tree
+  221  cd wildcard_lab
+  222  rm *
+  223  tree
+  224  rm ../backup/*
+  225  tree
+  226  cd ..; tree
+  227  cd wildcard_lab
+  228  touch file{1,2,3}.txt
+  229  touch [1-3]file.txt
+  230  history > ../../lab2/wildcardex3_command_history.txt
+  231  cd ../../lab2
+  232  ls
+  233  less wildcardex3_command_history.txt 
+  234  cls
+  235  clear
+  236  history
+  237  cd ~
+  238  scp -r gic-ang-panha@i4gic-os:~ ~
+  239  exit
+  240  cd lab3
+  241  mkdir logs
+  242  ls
+  243  cd logs
+  244  tree
+  245  touch log2023010[1-5].txt
+  246  ls log202301[0-9][0-9].txt
+  247  ls log202301-[0-9].txt
+  248  ls
+  249  tree
+  250  rm log2023010\[1-5\].txt 
+  251  touch log2023010{1,2,3,4,5}.txt
+  252  ls log202301[0-9][0-9].txt
+  253  ls log2023010[135].txt
+  254  history > ../wildcardex3_command_history.txt 
