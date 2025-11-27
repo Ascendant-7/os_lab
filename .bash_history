@@ -237,3 +237,69 @@ history
 cd ~
 scp -r gic-ang-panha@i4gic-os:~ ~
 exit
+cd lab3
+mkdir logs
+ls
+cd logs
+tree
+touch log2023010[1-5].txt
+ls log202301[0-9][0-9].txt
+ls log202301-[0-9].txt
+ls
+tree
+rm log2023010\[1-5\].txt 
+touch log2023010{1,2,3,4,5}.txt
+ls log202301[0-9][0-9].txt
+ls log2023010[135].txt
+history > ../wildcardex3_command_history.txt 
+cd ../
+mkdir link_lab
+ls
+echo "Hello World!" > link_lab/original.txt
+ln -s link_lab/original.txt symlink.txt
+ln link_lab/original.txt hardlink.txt
+less symlink.txt
+cat symlink.txt
+cat hardlink.txt
+ln -s link_lab/helloworld.py hw.py
+history > wildcardex4_command_history.txt
+clear
+cd lab3
+cd ~
+tree
+clear
+git init
+git add .
+git commit -m "Initial commit"
+git config user.email "angpanha2019@gmail.com"
+git config user.name "Ang Panha"
+git remote add origin https://github.com/Ascendant-7/os_lab.git
+git branch -M main
+git branch
+git status
+git commit -m "Initial commit"
+git push -u origin main
+exit
+ls
+mkdir lab4
+ls -l ~ > ~/lab4/contents.txt
+sort contents.txt >> contents-sorted.txt
+cd lab4
+sort contents.txt >> contents-sorted.txt
+ls ~
+ls -a ~
+cd etc
+tail /etc/passwd > ~/lab4/Documents/newfile.txt
+touch Documents/newfile.txt
+mkdir Documents
+touch Documents/newfile.txt
+tail /etc/passwd > ~/lab4/Documents/newfile.txt
+nano Documents/newfile.txt
+wc /?
+wc ?
+
+head -n 5 /etc/passwd | sort -r
+tail -n 9 contents.txt | wc -m
+find /usr/share -name test
+history | tail -n 50 > ~/lab4/commands_history.txt
+less commands_history.txt

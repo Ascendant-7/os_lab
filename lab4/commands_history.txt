@@ -1,0 +1,50 @@
+  255  cd ../
+  256  mkdir link_lab
+  257  ls
+  258  echo "Hello World!" > link_lab/original.txt
+  259  ln -s link_lab/original.txt symlink.txt
+  260  ln link_lab/original.txt hardlink.txt
+  261  less symlink.txt
+  262  cat symlink.txt
+  263  cat hardlink.txt
+  264  ln -s link_lab/helloworld.py hw.py
+  265  history > wildcardex4_command_history.txt
+  266  clear
+  267  cd lab3
+  268  cd ~
+  269  tree
+  270  clear
+  271  git init
+  272  git add .
+  273  git commit -m "Initial commit"
+  274  git config user.email "angpanha2019@gmail.com"
+  275  git config user.name "Ang Panha"
+  276  git remote add origin https://github.com/Ascendant-7/os_lab.git
+  277  git branch -M main
+  278  git branch
+  279  git status
+  280  git commit -m "Initial commit"
+  281  git push -u origin main
+  282  exit
+  283  ls
+  284  mkdir lab4
+  285  ls -l ~ > ~/lab4/contents.txt
+  286  sort contents.txt >> contents-sorted.txt
+  287  cd lab4
+  288  sort contents.txt >> contents-sorted.txt
+  289  ls ~
+  290  ls -a ~
+  291  cd etc
+  292  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  293  touch Documents/newfile.txt
+  294  mkdir Documents
+  295  touch Documents/newfile.txt
+  296  tail /etc/passwd > ~/lab4/Documents/newfile.txt
+  297  nano Documents/newfile.txt
+  298  wc /?
+  299  wc ?
+  300  wc -w < contents.txt >> ~/lab4/filed2.txt
+  301  head -n 5 /etc/passwd | sort -r
+  302  tail -n 9 contents.txt | wc -m
+  303  find /usr/share -name test
+  304  history | tail -n 50 > ~/lab4/commands_history.txt

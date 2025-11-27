@@ -1,0 +1,6 @@
+drwxrwxr-x 10 gic-ang-panha gic-ang-panha 4096 Nov 20 16:27 lab3
+drwxrwxr-x  2 gic-ang-panha gic-ang-panha 4096 Nov 27 15:13 lab4
+drwxrwxr-x  3 gic-ang-panha gic-ang-panha 4096 Nov 20 15:40 Document
+drwxrwxr-x  3 gic-ang-panha gic-ang-panha 4096 Oct 23 16:14 Desktop
+drwxrwxr-x  4 gic-ang-panha gic-ang-panha 4096 Nov 20 15:57 lab2
+total 20
