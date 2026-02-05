@@ -1,0 +1,12 @@
+#!/bin/bash
+
+fname="$1"
+if [ -f "$fname" ]; then
+	echo "'$fname' is a regular file."
+elif [ -d "$fname" ]; then
+	echo "'$fname' is a directory."
+elif [ -e "$fname" ]; then
+	echo "'$fname' exists but is another type of file."
+else
+	echo "'$fname' does not exist."
+fi
