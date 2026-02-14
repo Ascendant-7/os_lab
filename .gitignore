@@ -1,2 +1,5 @@
 lab10/backup/var/log
-.*
+.bash*
+.cache
+.lesshst
+.profile
